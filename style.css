@@ -8,11 +8,43 @@
 body {
     font-family: Arial, sans-serif;
 }
-.nav-bar {
-    background-color:black;
+/*loc-bar*/
+.loc-bar{
+    background-color: #F4F6FF;
+    height: 50px;
     padding-left: 15px;
     padding-right: 15px;
-    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.location i{
+    color: #F3C623;
+    margin-right: 12px;
+}
+.loc-btn{
+    padding: 8px;
+    font-size: 12px;
+    margin-left: 20px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+/*line*/
+.line{
+    height: 1px;
+    background-color: black;
+    width: 100%;
+}
+
+/*nav-bar*/
+.nav-bar {
+    background-color: #F4F6FF;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 80px;
 }
 
 .nav-div {
@@ -22,7 +54,7 @@ body {
     height: 100%;
 }
 
-.logo-location {
+.logo-img{
     display: flex;
     align-items: center;
 }
@@ -37,16 +69,7 @@ body {
     color: #F3C623;
 }
 
-.location {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    color: #EEEEEE;
-}
 
-.location i {
-    margin-right: 8px;
-}
 
 ul {
     display: flex;
@@ -59,7 +82,7 @@ li {
 }
 
 li a {
-    color: #EEEEEE;
+    color: black;
     font-size: 18px;
     padding: 8px 12px;
 }
@@ -85,7 +108,7 @@ li a:hover {
 .dropdown i {
     font-size: 20px;
     padding: 8px;
-    color: #EEEEEE;
+    color: black;
 }
 
 .btn {
@@ -119,6 +142,6 @@ li a:hover {
 .cart i {
     font-size: 20px;
     padding: 8px;
-    color: #EEEEEE;
+    color: #F3C623;
     cursor: pointer;
 }
