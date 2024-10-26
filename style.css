@@ -7,10 +7,17 @@
 
 body {
     font-family: Arial, sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEEEE;
+}
+html{
+    height: 100%;
 }
 /*loc-bar*/
 .loc-bar{
-    background-color: #F4F6FF;
+    background-color: #EEEEEE;
     height: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -36,13 +43,13 @@ body {
 /*line*/
 .line{
     height: 1px;
-    background-color: grey;
+    background-color: #222831;
     width: 100%;
 }
 
 /*nav-bar*/
 .nav-bar {
-    background-color: #F4F6FF;
+    background-color: #EEEEEE;
     padding-left: 1rem;
     padding-right: 1rem;
     height: 6rem;
@@ -104,13 +111,13 @@ li a {
 .dropdown i {
     font-size: 1.25rem;
     padding: 0.5rem;
-    color: black;
+    color: #222831;
 }
 
 .btn {
     position: absolute;
     right: 0;
-    background-color: #263F58;
+    background-color: #222831;
     width: 7.5rem;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
@@ -144,7 +151,7 @@ li a {
 /*Order bar*/
 .order-bar{
     height: 5rem;
-    background-color: black;
+    background-color: #222831;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,10 +167,10 @@ li a {
 
 }
 .order-par{
-    color: white;
+    color: #EEEEEE;
     padding-right: 20px;
 }
-/**/
+/*Media queries*/
 
 @media (max-width: 1024px) {
     .logo-img {
@@ -192,7 +199,6 @@ li a {
     }
 }
 
-/* For devices with width 768px and below (small tablets, large phones) */
 @media (max-width: 768px){
     .nav-div{
         flex-direction: row;
@@ -221,8 +227,6 @@ li a {
         font-size: 1rem;
     }
 }
-
-/* For devices with width 480px and below (mobile phones) */
 @media (max-width: 480px) {
     .nav-div{
         flex-direction: row;
@@ -255,4 +259,36 @@ li a {
         padding: 0.5em;
     }
 }
+
+.footer{
+    margin-top: auto;
+    height: 8rem;
+    background-color: #222831;
+}
+
+.social-media-footer{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-media-footer a{
+    color: #F3C623;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+.social-media-footer a:hover{
+    color: #EEEEEE;
+}
+.footer-botton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-botton p{
+    color: #EEEEEE;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+}
+
 
