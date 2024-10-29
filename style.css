@@ -1,6 +1,6 @@
 * {
     text-decoration: none;
-   margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -176,8 +176,7 @@ li a {
 .scrollimg{
     height: 19rem;
     width: 100%;
-    margin-top: 0.2rem;
-    box-shadow:7px 7px 10px 10px rgb(181, 177, 177);
+    box-shadow:7px 7px 10px #222831;
 }
 .pizzascroll{
     height: 19rem;
@@ -188,10 +187,11 @@ li a {
 /*categories*/
 
 .heading{
-   margin-top: 3rem;
+   margin-top: 5rem;
+   margin-bottom: 2rem;
    font-size: 30px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   text-align: center;    
+   text-align: center;
+   color: #222831 ;    
 }
 
 .categories{
@@ -206,13 +206,13 @@ li a {
 }
 .list{
     height: 19rem;
-    width: 14rem;
+    width: 17rem;
     border: solid black 1px;
-    box-shadow:7px 7px 10px 10px rgb(181, 177, 177);
+    box-shadow:5px 5px 5px 5px rgb(181, 177, 177);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 .pizza{
     background-image: url(images/pizza.jpg);
@@ -228,6 +228,60 @@ li a {
 }
 .wraps{
     background-image: url(images/wraps.jpg);
+    background-size: cover;
+}
+.rolls{
+    background-image: url(images/rolls.jpg);
+    background-size: cover;
+}
+.starters{
+    background-image: url(images/fries.jpg);
+    background-size: cover;
+
+}
+.clubsandwich{
+    background-image: url(images/club.jpg);
+    background-size: cover;
+    
+}
+.singlesandwich{
+    background-image: url(images/single.jpg);
+    background-size: cover;
+}
+.broasteds{
+    background-image: url(images/broasted.jpg);
+    background-size: cover;
+    
+}
+.breakfast{
+    background-image: url(images/maggiee.jpg);
+    background-size: cover;
+    
+}
+.tortilla{
+    background-image: url(images/tortillaa.jpeg);
+    background-size: cover;
+    
+}
+.shakes{
+    background-image: url(images/shakes.jpg);
+    background-size: cover;
+    
+}
+.hotitems{
+    background-image: url(images/hotitems.jpg);
+    background-size: cover;
+}
+.colditems{
+    background-image: url(images/colditems.jpg);
+    background-size: cover;
+}
+.mocktail{
+    background-image: url(images/mocktail.jpg);
+    background-size: cover;
+}
+.freshjuice{
+    background-image: url(images/freshjuice.jpg);
     background-size: cover;
 }
 .list h2{
@@ -361,4 +415,4 @@ li a {
     margin-left: 2rem;
 }
 
-
+  
