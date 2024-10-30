@@ -15,6 +15,13 @@ body {
 html{
     height: 100%;
 }
+/* navbar */
+.nav{
+    position: fixed;
+    width: 100%;
+}
+
+
 /*loc-bar*/
 .loc-bar{
     background-color: #EEEEEE;
@@ -24,6 +31,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .location i{
     color: #F3C623;
@@ -150,6 +158,7 @@ li a {
 }
 /*Order bar*/
 .order-bar{
+    margin-top: 9rem;
     height: 5rem;
     background-color: #222831;
     display: flex;
@@ -173,10 +182,11 @@ li a {
 
 /*scrollable home page image*/
 
-.scrollimg{
+.scrolling{
     height: 19rem;
     width: 100%;
     box-shadow:7px 7px 10px #222831;
+    margin-top: 0.1rem;
 }
 .pizzascroll{
     height: 19rem;
@@ -212,84 +222,103 @@ li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
+    font-size: 20px;
 }
 .pizza{
-    background-image: url(images/pizza.jpg);
+    background-image: url(/Arabian/images/pizza.jpg);
     background-size: cover;
+    opacity: 1;
+    animation-timing-function: ease;
+    animation-name:categA2;
+    animation-duration:0.1s;
+
 }
 .burger{
     background-image: url(images/burger.jpg);
     background-size: cover;
+    opacity: 1;
+    animation-timing-function: ease;
+    animation-name:categA2;
+    animation-duration:0.1s;
 }
 .sandwich{
     background-image: url(images/sandwich.jpg);
     background-size: cover;
+    opacity: 1;
+    animation-timing-function: ease;
+    animation-name:categA2;
+    animation-duration:0.1s;
 }
 .wraps{
     background-image: url(images/wraps.jpg);
     background-size: cover;
+    opacity: 1;
+    animation-timing-function: ease;
+    animation-name:categA2;
+    animation-duration:0.1s;
 }
 .rolls{
     background-image: url(images/rolls.jpg);
     background-size: cover;
+    opacity: 1;
+    animation-timing-function: ease;
+    animation-name:categA2;
+    animation-duration:0.1s;
 }
 .starters{
     background-image: url(images/fries.jpg);
     background-size: cover;
+    opacity: 1;
+    animation-timing-function: ease;
+    animation-name:categA2;
+    animation-duration:0.1s;
 
 }
 .clubsandwich{
     background-image: url(images/club.jpg);
     background-size: cover;
+    opacity: 1;
+    animation-timing-function: ease;
+    animation-name:categA2;
+    animation-duration:0.1s;
     
 }
-.singlesandwich{
-    background-image: url(images/single.jpg);
+.fullmenu{
+    background-image: url(images/fullmenu.jpg);
     background-size: cover;
+    opacity: 1;
+    animation-timing-function: ease;
+    animation-name:categA2;
+    animation-duration:0.1s;
 }
-.broasteds{
-    background-image: url(images/broasted.jpg);
-    background-size: cover;
-    
+.fullmenu a{
+   color: #000000;
+   text-align: center;
+   text-shadow: #bcb9b9;
 }
-.breakfast{
-    background-image: url(images/maggiee.jpg);
-    background-size: cover;
-    
-}
-.tortilla{
-    background-image: url(images/tortillaa.jpeg);
-    background-size: cover;
-    
-}
-.shakes{
-    background-image: url(images/shakes.jpg);
-    background-size: cover;
-    
-}
-.hotitems{
-    background-image: url(images/hotitems.jpg);
-    background-size: cover;
-}
-.colditems{
-    background-image: url(images/colditems.jpg);
-    background-size: cover;
-}
-.mocktail{
-    background-image: url(images/mocktail.jpg);
-    background-size: cover;
-}
-.freshjuice{
-    background-image: url(images/freshjuice.jpg);
-    background-size: cover;
-}
+
+
 .list h2{
     color: #EEEEEE;
     display: none;
 }
 .list:hover h2{
    display: flex;
+   animation-name: categA;
+   animation-duration: 0.05s;
+   animation-timing-function: linear;
+}
+
+
+/* animation for categories */
+
+@keyframes categA {
+    from{font-size:20px ;}
+    to{font-size: 22px ;}
+}
+@keyframes categA2{
+    from{opacity: 1;}
+    to{opacity: 0.7;}
 }
 
 
