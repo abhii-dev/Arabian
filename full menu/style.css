@@ -230,10 +230,20 @@ li a {
 
 
 /*MENU-SECTION*/
+.menu-items{
+    width: 25%;
+    height: 100%;
+    overflow: scroll;
+    border-right: #222831d8 solid 0.05rem;
+}
+.menu-items::-webkit-scrollbar{
+    display: none;
+}
 .menu-header{
     color: black;
-    margin-top: 20px;
-    margin-bottom: 22px;
+    margin-top: 0.2rem;
+    margin-left: 6rem;
+    margin-bottom: 0.2rem;
     font-size: 35px;
     font-weight:900;
 }
@@ -251,9 +261,41 @@ li a {
 }
 
 .menu{
+    height: 58vh;
+    width: 90vw;
+    padding-left: 7rem;
+    /* padding-right: 1.6rem; */
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+/* cart items */
+
+.cart-items{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: red; */
+    overflow: scroll;
+}
+.cart-items::-webkit-scrollbar{
+    display: none;
+}
+.dishes{
+    height: 12rem;
+    width: 10rem;
+    margin: 7px;
+    background-color: #fff;
+    border-radius: 1rem;
+    border: solid 0.5px rgba(80, 76, 76, 0.765);
+    box-shadow: 1px 1px 3px 3px #8e949cc7;
 }
 
 /*FOOTER*/
