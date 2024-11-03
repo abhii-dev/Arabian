@@ -225,7 +225,7 @@ li a {
     font-size: 20px;
 }
 .pizza{
-    background-image: url(/Arabian/images/pizza.jpg);
+    background-image: url(images/pizza.jpg);
     background-size: cover;
     opacity: 1;
     animation-timing-function: ease;
@@ -284,7 +284,7 @@ li a {
     
 }
 .fullmenu{
-    background-image: url(images/fullmenu.jpg);
+    background-image: url(images/more.jpg);
     background-size: cover;
     opacity: 1;
     animation-timing-function: ease;
@@ -292,9 +292,12 @@ li a {
     animation-duration:0.1s;
 }
 .fullmenu a{
-   color: #000000;
+   color: black;
    text-align: center;
    text-shadow: #bcb9b9;
+   font-size: 30px;
+   font-weight: bolder;
+   
 }
 
 
@@ -334,7 +337,7 @@ li a {
         margin-right: 5rem;
     }
 
-    .loc-bar, .nav-bar, .order-bar {
+    .nav-bar, .order-bar {
         flex-direction: column;
         padding: 0.5rem;
     }
@@ -342,13 +345,6 @@ li a {
         padding: 0.5rem;
         margin-right: 1rem;
         margin-top: 0.5rem;
-    }
-    .location i{
-        display: none;
-    }
-    .loc-btn{
-        padding :0.3rem;
-        font-size: 0.75rem;
     }
 }
 
@@ -371,9 +367,6 @@ li a {
     }
     .cart i{
         font-size: 1.25rem;
-        padding: 0.5rem;
-    }
-    .loc-bar{
         padding: 0.5rem;
     }
     .dropdown i{
@@ -413,6 +406,8 @@ li a {
     }
 }
 
+
+/*FOOTER*/
 .footer{
     margin-top: auto;
     height: 8rem;
