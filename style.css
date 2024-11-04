@@ -35,7 +35,7 @@ html{
     
 }
 .location i{
-    color: #F3C623;
+    color: #FF0000;
     margin-right: 1rem;
 }
 .loc-btn{
@@ -45,7 +45,7 @@ html{
     border-radius: 3rem;
     border: none;
     color:black;
-    background-color:#F3C623;
+    background-color:#FF0000;
     cursor: pointer;
 }
 
@@ -84,7 +84,7 @@ html{
 }
 
 .logo a {
-    color: #F3C623;
+    color: #FF0000;
     margin-right: 1.25rem;
 }
 ul {
@@ -154,7 +154,7 @@ li a {
 .cart i {
     font-size: 1.25rem;
     padding: 0.5rem;
-    color: #F3C623;
+    color: #FF0000;
     cursor: pointer;
 }
 /*Order bar*/
@@ -173,7 +173,7 @@ li a {
     font-size: 1rem;
     border: none;
     border-radius: 3rem;
-    background-color: #EEC925;
+    background-color: #FF0000;
     cursor: pointer;
 
 }
@@ -216,7 +216,7 @@ li a {
 }
 
 .login-heading{
-    color: #E4002B;
+    color: #FF0000;
     font-size: 2rem;
     text-align: center;
     margin-top: 1rem;
@@ -313,7 +313,7 @@ li a {
     cursor: pointer;
 }
 .signup-heading{
-    color: #E4002B;
+    color: #FF0000;
     font-size: 2rem;
     text-align: center;
     margin-top: 0rem;
@@ -585,7 +585,7 @@ li a {
 .footer{
     margin-top: auto;
     height: 8rem;
-    background-color: #222831;
+    background-color: black;
 }
 
 .social-media-footer{
@@ -595,7 +595,7 @@ li a {
     justify-content: center;
 }
 .social-media-footer a{
-    color: #F3C623;
+    color: #FF0000;
     padding-left: 2rem;
     margin-top: 2rem;
 }
