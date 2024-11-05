@@ -55,7 +55,11 @@ html{
     background-color: #222831;
     width: 100%;
 }
-
+.line2{
+    height: 1px;
+    background-color: white
+    width: 100%;
+}
 /*nav-bar*/
 .nav-bar {
     background-color: white;
@@ -385,8 +389,8 @@ li a {
 
 }
 .list{
-    height: 22rem;
-    width: 21rem;
+    height: 20rem;
+    width: 18rem;
     border: solid rgba(77, 75, 75, 0.914) 1px;
     box-shadow:1px 1px 5px 5px rgb(181, 177, 177);
     display: flex;
@@ -581,6 +585,52 @@ li a {
 }
 
 
+/*Scroll-bar*/
+
+.background-scroll{
+    background-color: black;
+    padding: 2rem 5rem;
+}
+.scroll-items{
+    width: 70rem;
+    display: flex;
+    overflow-x:scroll;
+}
+
+.scroll-items div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+    padding: 0.6rem;
+    flex: none;
+}
+
+.square {
+    width: 10rem;  /* Adjust as needed */
+    height: 18rem; /* Adjust as needed */
+    background-color: #888; /* Example color, adjust as needed */
+    border-radius: 0.5rem; /* Optional for rounded corners */
+}
+
+.scroll-items::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+    
+}
+
+#backBtn, #nextBtn{
+    width: 3rem;
+    cursor: pointer;
+    margin: 2.5rem;
+}
+
 /*FOOTER*/
 .footer{
     margin-top: auto;
@@ -614,3 +664,5 @@ li a {
 }
 
   
+/*COMBO*/
+

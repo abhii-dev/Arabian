@@ -26,4 +26,25 @@ cross2.addEventListener("click", ()=>{
     formContainer2.classList.remove("show");
 })
 
+
+//js for scrolling menu
+
+const scrollContainer = document.querySelector(".scroll-items");
+const backBtn = document.getElementById("backBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+nextBtn.addEventListener("click", () => {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft += 900;
+     
+});
+
+backBtn.addEventListener("click", () => {
+    scrollContainer.style.scrollBehavior = "smooth";
+    scrollContainer.scrollLeft -= 900; 
+});
+
+
+
+
   
