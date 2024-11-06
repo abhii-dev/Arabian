@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -44,7 +50,7 @@ html{
     margin-left: 1.25rem;
     border-radius: 3rem;
     border: none;
-    color:black;
+    color:white;
     background-color:#FF0000;
     cursor: pointer;
 }
@@ -171,19 +177,10 @@ li a {
     justify-content: center;
 
 }
-.order-btn{
-    padding: 0.8rem;
-    width: 7rem;
-    font-size: 1rem;
-    border: none;
-    border-radius: 3rem;
-    background-color: #FF0000;
-    cursor: pointer;
-
-}
 .order-par{
-    color: #EEEEEE;
+    color: white;
     padding-right: 20px;
+    font-size: 1.6rem;
 }
 
 /* login signup page */
@@ -359,7 +356,7 @@ li a {
 .scrolling{
     height: 19rem;
     width: 100%;
-    box-shadow:7px 7px 10px #222831;
+    box-shadow:3px 3px 10px 10px #8d949dd8;
     margin-top: 0.1rem;
 }
 .pizzascroll{
@@ -374,6 +371,7 @@ li a {
    margin-top: 5rem;
    margin-bottom: 2rem;
    font-size: 30px;
+   font-weight: 900;
    text-align: center;
    color: #222831 ;    
 }
@@ -401,10 +399,6 @@ li a {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
-   /* -webkit-transition-property: -webkit-transform, -webkit-transform;
-    -webkit-transition-duration: 0.1s ,0.5s;
-    -webkit-transition-timing-function: ease-out, ease-in ;
-    -webkit-transition-delay: 0,0;*/
     scale: 1; 
     transition: ease-in;
     transition-duration: 0.1s ;
@@ -494,14 +488,6 @@ li a {
     color: black;
 
 }
-
-
-/* animation for categories */
-
-/* @keyframes divscale{
-    from{scale: 1;}
-    to{scale: 1.1;}
-} */
 
 
 /*Media queries*/
@@ -597,7 +583,7 @@ li a {
     overflow-x:scroll;
 }
 
-.scroll-items div{
+.scroll-items2{
     width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -607,10 +593,52 @@ li a {
 }
 
 .square {
-    width: 10rem;  /* Adjust as needed */
-    height: 18rem; /* Adjust as needed */
-    background-color: #888; /* Example color, adjust as needed */
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    overflow: hidden;
+    width: 19rem;  /* Adjust as needed */
+    height: 24rem; /* Adjust as needed */
+    background-color: white; /* Example color, adjust as needed */
     border-radius: 0.5rem; /* Optional for rounded corners */
+}
+.square-img{
+    margin: 0%;
+    height:60% ;
+    width: 100%;
+    background-color:#FF0000;
+}
+.square-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.square-heading{
+    margin-top: 0.7rem;
+    margin-left: 1.7rem;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.price-combo{
+    font-size: 1.5rem;
+    font-family: "Anton SC", sans-serif;
+   font-weight: 800;
+   font-style: normal;
+   margin-left: 6rem;
+   margin-top: 0.3rem;
+}
+.square-button{
+    background-color: #FF0000;
+    color: white;
+    height: 3rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: none;
+    margin-left: 5.2rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
 }
 
 .scroll-items::-webkit-scrollbar{

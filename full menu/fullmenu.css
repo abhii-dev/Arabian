@@ -285,6 +285,7 @@ li a {
     justify-content: space-evenly;
     align-items: center;
     overflow: scroll;
+    scroll-behavior:smooth ;
 }
 .cart-items::-webkit-scrollbar{
     display: none;
