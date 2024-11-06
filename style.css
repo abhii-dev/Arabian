@@ -63,7 +63,7 @@ html{
 }
 .line2{
     height: 1px;
-    background-color: white
+    background-color: white;
     width: 100%;
 }
 /*nav-bar*/
@@ -232,7 +232,7 @@ li a {
     margin-left: 9rem;
     border-bottom: solid 0.5px black;
 }
-#phone{
+.phone{
     cursor: pointer;
     height: 2rem;
     width: 70%;
@@ -248,7 +248,7 @@ li a {
     margin-left: 9rem;
     border-bottom: solid 0.5px black;
 }
-#password{
+.password{
     height: 2rem;
     width: 70%;
     border: none;
@@ -347,6 +347,10 @@ li a {
     margin-top: 1rem;
     margin-left: 11rem;
 }
+.log-sign{
+    color: rgb(89, 89, 216);
+    cursor: pointer;
+}
 
 
 
@@ -354,13 +358,13 @@ li a {
 /*scrollable home page image*/
 
 .scrolling{
-    height: 19rem;
+    height: 22rem;
     width: 100%;
     box-shadow:3px 3px 10px 10px #8d949dd8;
     margin-top: 0.1rem;
 }
 .pizzascroll{
-    height: 19rem;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
