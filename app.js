@@ -3,6 +3,7 @@
 formContainer = document.querySelector(".form-container");
 loginA = document.querySelector(".loginA");
 cross = document.querySelector(".cross");
+alreadyHaveAccount=document.querySelector(".alreadyyy");
 
 loginA.addEventListener("click", ()=>{
     formContainer.classList.add("show");
@@ -12,11 +13,19 @@ cross.addEventListener("click", ()=>{
     formContainer.classList.remove("show");
 })
 
+alreadyHaveAccount.addEventListener("click",()=>{
+    formContainer.classList.add("show");
+    formContainer2.classList.remove("show");
+    console.log("clicked")
+})
+
 // js for sign up page
 
 formContainer2 = document.querySelector(".form-container2");
 signUpA = document.querySelector(".signupA");
 cross2 = document.querySelector(".cross2");
+dontHaveAccount=document.querySelector(".dont");
+
 
 signUpA.addEventListener("click", ()=>{
     formContainer2.classList.add("show");
@@ -25,6 +34,12 @@ signUpA.addEventListener("click", ()=>{
 cross2.addEventListener("click", ()=>{
     formContainer2.classList.remove("show");
 })
+dontHaveAccount.addEventListener("click",()=>{
+    formContainer2.classList.add("show");
+    formContainer.classList.remove("show");
+    console.log("clicked")
+})
+
 
 
 //js for scrolling menu
@@ -44,6 +59,44 @@ backBtn.addEventListener("click", () => {
     scrollContainer.scrollLeft -= 900; 
 });
 
+
+// js for cart page
+
+cartIcon=document.querySelector(".cart-icon");
+cartPage=document.querySelector(".cart-page");
+cartBack=document.querySelector(".cart-back");
+
+cartIcon.addEventListener("click",()=>{
+    cartPage.classList.add("show");
+})
+cartBack.addEventListener("click",()=>{
+    cartPage.classList.remove("show");
+})
+
+// js for adding items in cart
+
+cartItems=[{
+    image : 'images/menu-burger.jpg',
+    name : 'Chicken Pizza - Non Veg',
+    price : 'Rs: 299/-'
+}];
+
+cartItemHTML = '';
+
+cartItems.array.forEach(element => {
+    cartItemHTML+= `<div class="cart-page-items">
+                       <div class="cart-img-div">
+                           <img src=`` alt="">
+                        </div>
+                       <div class="cart-item-info">
+                           <p>${cartItems.name}</p>
+                           <h2>${cartItems.price}</h2>
+                       </div>
+                    </div>`;
+
+});
+
+cartPage.innerHTML = cartItemHTML;
 
 
 

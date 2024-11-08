@@ -63,7 +63,7 @@ html{
 }
 .line2{
     height: 1px;
-    background-color: white
+    background-color: white;
     width: 100%;
 }
 /*nav-bar*/
@@ -232,7 +232,7 @@ li a {
     margin-left: 9rem;
     border-bottom: solid 0.5px black;
 }
-#phone{
+.phone{
     cursor: pointer;
     height: 2rem;
     width: 70%;
@@ -248,7 +248,7 @@ li a {
     margin-left: 9rem;
     border-bottom: solid 0.5px black;
 }
-#password{
+.password{
     height: 2rem;
     width: 70%;
     border: none;
@@ -347,6 +347,86 @@ li a {
     margin-top: 1rem;
     margin-left: 11rem;
 }
+.log-sign{
+    color: rgb(89, 89, 216);
+    cursor: pointer;
+}
+
+
+
+
+/* cart page */
+
+.cart-page{
+    position: absolute;
+    z-index: 19999;
+    right: 0%;
+    height: 100%;
+    width: 30%;
+    background-color:white;
+    opacity: 0;
+    pointer-events: none;
+}
+.cart-page.show{
+        opacity: 1;
+        pointer-events: all;
+}
+.cart-page-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 12rem;
+    width: 100%;
+    height: 4rem;
+    color: #FF0000;
+    border-bottom: #757a83 solid 1px;
+}
+.cart-page-nav i{
+    font-size: 25px;
+    cursor: pointer;
+}
+.cart-page-heading{
+    text-align: center;
+    margin-top: 1rem;
+}
+.cart-page-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 10rem;
+    width: 100%;
+    margin-top: 1rem;
+    border-bottom: #757a83 solid 1px;
+}
+.cart-img-div{
+    height: 8rem;
+    width: 25%;
+    background-color: #fff;
+    padding: 0.2rem;
+}
+.cart-img-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cart-item-info{
+    height: 8rem;
+    width: 73%;
+    background-color: #fff;
+}
+.cart-item-info p{
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cart-item-info h2{
+    font-size: 30px;
+    font-weight: 800;
+    display: inline;
+}
 
 
 
@@ -354,13 +434,13 @@ li a {
 /*scrollable home page image*/
 
 .scrolling{
-    height: 19rem;
+    height: 22rem;
     width: 100%;
     box-shadow:3px 3px 10px 10px #8d949dd8;
     margin-top: 0.1rem;
 }
 .pizzascroll{
-    height: 19rem;
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
