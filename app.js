@@ -60,6 +60,44 @@ backBtn.addEventListener("click", () => {
 });
 
 
+// js for cart page
+
+cartIcon=document.querySelector(".cart-icon");
+cartPage=document.querySelector(".cart-page");
+cartBack=document.querySelector(".cart-back");
+
+cartIcon.addEventListener("click",()=>{
+    cartPage.classList.add("show");
+})
+cartBack.addEventListener("click",()=>{
+    cartPage.classList.remove("show");
+})
+
+// js for adding items in cart
+
+cartItems=[{
+    image : 'images/menu-burger.jpg',
+    name : 'Chicken Pizza - Non Veg',
+    price : 'Rs: 299/-'
+}];
+
+cartItemHTML = '';
+
+cartItems.array.forEach(element => {
+    cartItemHTML+= `<div class="cart-page-items">
+                       <div class="cart-img-div">
+                           <img src=`` alt="">
+                        </div>
+                       <div class="cart-item-info">
+                           <p>${cartItems.name}</p>
+                           <h2>${cartItems.price}</h2>
+                       </div>
+                    </div>`;
+
+});
+
+cartPage.innerHTML = cartItemHTML;
+
 
 
   
