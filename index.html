@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
     <title>Arabian.com</title>
 </head>
-<body>
+<body id="main-body">
     <!--navbar-->
 
 <div class="nav">
@@ -126,18 +126,71 @@
             <i class="fa-solid fa-arrow-left cart-back"></i>
             <h2>My Cart</h2>
         </div>
-        <h2 class="cart-page-heading">ORDER SUMMARY</h2>
-        <div class="cart-page-items">
-            <div class="cart-img-div">
-                <img src="images/menu-burger.jpg" alt="">
-
+        <div class="main-cart-box">
+            <div class="cart-box">
+                <div class="cart-image">
+                    <p>ORDER SUMMARY</p>
+                    <img src="images/menu-colditems.jpg" alt="">
+                </div>
+                <div class="cart-info">
+                    <p class="cart-product-name">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, perspiciatis?</p>
+                    <p class="cart-recent-sold">Sold xxxx products</p>
+                    <p class="cart-product-prize">500Rs</p>
+                <div class="cart-product-quantity">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>0</span>
+                        <i class="fa-solid fa-minus"></i>
+                </div>
+                </div>
+                
             </div>
-            <div class="cart-item-info">
-                <p>Chicken Pizza - Non Veg</p>
-                <h2>Rs: 299/-</h2>
+            <div class="cart-box">
+                <div class="cart-image">
+        
+                    <img src="images/menu-colditems.jpg" alt="">
+                </div>
+                <div class="cart-info">
+                    <p class="cart-product-name">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, perspiciatis?</p>
+                    <p class="cart-recent-sold">Sold xxxx products</p>
+                    <p class="cart-product-prize">500Rs</p>
+                <div class="cart-product-quantity">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>0</span>
+                        <i class="fa-solid fa-minus"></i>
+                </div>
+                </div>
+                
             </div>
         </div>
-     </div>
+        
+        <h6 class="product-heading">Product Summary</h6>
+
+        <div class="product-summary">
+            <div class="cart-price-summary">
+                    <a>Order Total</a>
+                    <a>Items Discount</a>
+                    <a>Shipping</a>
+                    <a>Online Payment discount</a>
+                    <a>Grand Total</a>
+            </div>
+            <div class="cart-product-cost">
+                    <a href="">0000</a>
+                    <a href="">0000</a>
+                    <a href="">0000</a>
+                    <a href="">0000</a>
+                    <a href="">0000</a>
+            </div>
+        </div>
+
+        <div class="cart-final-sec">
+            <div class="total-prize">
+                <a>0000</a>
+            </div>
+            <div class="cart-continue">
+                <button class="cart-continue-button">Continue</button>
+            </div>
+        </div>
+  </div>
 
 
     
@@ -147,7 +200,7 @@
 
     <!-- body -->
     <div class="scrolling">
-    <img src="/Arabian/images/pizzascrollimg.jpg" alt="" class="pizzascroll">
+    <img src="/images/pizzascrollimg.jpg" alt="" class="pizzascroll">
     </div>
 
     <h2 class="heading">BROWSE CATEGORIES</h2>
@@ -170,29 +223,33 @@
 <div class="background-scroll">
     <div class="scroll-menu">
       <img src="images/back.png" id="backBtn">
-        <div class="scroll-items">
-            <div class="scroll-items2">
+        <div class="scroll-items" id="scrollItems">
+            <div class="scroll-items2 js-scroll-items">
+               <!--  GENERATED USING HTML
                 <div class="square">
                     <div class="square-img">
                         <img src="/Arabian/images/Combo-chicken and Coke.png" alt="">
-                   
                     </div>
                     <h2 class="square-heading"> Nuggets, Coke & Fries</h2>
                     <p class="price-combo"> Rs:299/- </p>
                     <button class="square-button">Add To Cart</button>
                 </div>
                 <div class="square">
-                    <div class="square-img"></div>
+                    <div class="square-img">
+                        <img src="/Arabian/images/Combo-chicken and Coke.png" alt="">
+                    </div>
                     <h2 class="square-heading"> Chicken Burger & Coke</h2>
-                    <p class="price-combo"> Rs:299/- </p>
+                    <p class="price-combo"> Rs:399/- </p>
                     <button class="square-button">Add To Cart</button>
                 </div>
                 <div class="square">
-                    <div class="square-img"></div>
+                    <div class="square-img">
+                        <img src="/Arabian/images/Combo-chicken and Coke.png" alt="">
+                    </div>
                     <h2 class="square-heading"> Veg Sandwich & Coke</h2>
-                    <p class="price-combo"> Rs:299/- </p>
+                    <p class="price-combo"> Rs:499/- </p>
                     <button class="square-button">Add To Cart</button>
-                </div>
+                </div>--> 
             </div>
             <div class="scroll-items2">
                 <div class="square">
@@ -257,6 +314,27 @@
 
    <!--footer-->
     <div class="footer" id="footerrr">
+        <div class="about-sec">
+           <div>
+            <a>Arabian India</a>
+            <a>About Arabian</a>
+            <a>Legal</a>
+            <a>Privacy Policy</a>
+           </div>
+           <div>
+            <a>Disclaimer</a>
+            <a>Arabian Food</a>
+            <a>Menu</a>
+            <a>Support</a>
+        </div>
+        <div>
+            <a>Arabian Feedback</a>
+            <a>Get Help</a>
+            <a>Privacy Policy</a>
+            <button><i class="fa-solid fa-phone"></i>Call Us 123-456-789</button>
+        </div>
+           
+        </div>
         <div class="social-media-footer">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>

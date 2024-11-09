@@ -1,3 +1,4 @@
+
 // js for login page
 
 formContainer = document.querySelector(".form-container");
@@ -68,14 +69,17 @@ cartBack=document.querySelector(".cart-back");
 
 cartIcon.addEventListener("click",()=>{
     cartPage.classList.add("show");
+    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+
 })
 cartBack.addEventListener("click",()=>{
     cartPage.classList.remove("show");
+    document.getElementsByTagName("body")[0].style.overflow = "scroll"
 })
 
 // js for adding items in cart
 
-cartItems=[{
+/*cartItems=[{
     image : 'images/menu-burger.jpg',
     name : 'Chicken Pizza - Non Veg',
     price : 'Rs: 299/-'
@@ -96,8 +100,49 @@ cartItems.array.forEach(element => {
 
 });
 
-cartPage.innerHTML = cartItemHTML;
+cartPage.innerHTML = cartItemHTML;*/
 
 
 
-  
+//js for cart 
+
+
+const cartItems =[{
+    id : 'item1',
+    name : 'Nuggets, Coke & Fries',
+    price : 299,
+    image: 'images/Combo-chicken and Coke.png'
+},{
+    id : 'item2',
+    name : 'Chicken Burger & Coke',
+    price : 399,
+    image: 'images/Combo-chicken and Coke.png' 
+},{
+    id : 'item2',
+    name : 'Veg Sandwich & Coke',
+    price : 499,
+    image: 'images/Combo-chicken and Coke.png' 
+    
+}
+    
+
+]
+
+
+let itemContainer = '';
+cartItems.forEach((item)=>{
+    itemContainer += `
+    <div class="square">
+        <div class="square-img">
+            <img src="${item.image}">
+        </div>
+    <h2 class="square-heading">${item.name}</h2>
+        <p class="price-combo"> ${item.price} </p>
+    <button class="square-button">Add To Cart</button>
+    </div>
+    `;
+})
+
+console.log(itemContainer);
+
+document.querySelector('.js-scroll-items').innerHTML = itemContainer;
